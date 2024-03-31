@@ -34,10 +34,12 @@ Then, we collected seven expanded system utterances based on each pair.
 git clone https://github.com/nu-dialogue/sui-corpus.git
 cd sui-corpus
 ```
+
 1. Clone Hazumi1911 repository
 ```bash
 git clone https://github.com/ouktlab/Hazumi1911.git
 ```
+
 1. Create the SUI corpus
 ```bash
 bash run_make_sui_corpus.sh
@@ -122,7 +124,7 @@ The created dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id,
 
 ## References
 
-[^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
+[^1]:Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
 
 ## Aknowledgement
 
