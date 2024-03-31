@@ -44,6 +44,8 @@ git clone https://github.com/ouktlab/Hazumi1911.git
 ```bash
 bash run_make_sui_corpus.sh
 ```
+> [!IMPORTANT]
+> The SUI corpus is stored in `sui-corpus/sui_corpus.json`.
 
 ## Data format
 
@@ -120,10 +122,6 @@ The created dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id,
 }
 ```
 
-## References
-
-[^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
-
 ## Aknowledgement
 
 This work was supported by JSPS KAKENHI Grant Number 19H05692.
@@ -138,3 +136,4 @@ The SUI corpus is licensed under a [Creative Commons Attribution-NonCommercial-S
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--sa%204.0-lightgrey.svg
 
+[^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
