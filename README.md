@@ -27,6 +27,24 @@ Then, we collected seven expanded system utterances based on each pair.
 - Python 3.8+
 - Osaka University Multimodal Dialogue Corpus (Hazumi1911)
 
+## Data creation
+
+1. Clone sui-corpus repository
+```bash
+git clone https://github.com/nu-dialogue/sui-corpus.git
+cd sui-corpus
+```
+
+2. Clone Hazumi1911 repository
+```bash
+git clone https://github.com/ouktlab/Hazumi1911.git
+```
+
+3. Create the SUI corpus
+```bash
+bash run_make_sui_corpus.sh
+```
+
 ## References
 
 [^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
