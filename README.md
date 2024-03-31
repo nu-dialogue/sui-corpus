@@ -98,6 +98,28 @@ The created dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id,
 ]
 ```
 
+## Citation
+
+```bibtex
+@inproceedings{tsunomori2024i,
+    title = "I Remember You!: SUI Corpus for Remembering and Utilizing Users' Information in Chat-oriented Dialogue Systems",
+    author = "Tsunomori, Yuiko and Higashinaka, Ryuichiro",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
+    year = "2024",
+    url = "",
+    pages = "",
+}
+
+@inproceedings{tsunomori2022user,
+    title = "ユーザ情報と対話文脈を考慮した発話生成のための対話コーパスの構築",
+    author = "角森, 唯子 and 東中, 竜一郎",
+    booktitle = "人工知能学会全国大会論文集第36回全国大会",
+    year = "2022",
+    url = "https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_3Yin201/_pdf/-char/ja",
+    pages = "3Yin201-3Yin201",
+}
+```
+
 ## References
 
 [^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
