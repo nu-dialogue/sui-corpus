@@ -22,6 +22,11 @@ Dialogue-1 and dialogue-2 are dialogues in which the same user talks about diffe
 We first divided each dialogue in Hazumi1911 into topic segments and then created pairs of dialogue-1 and dialogue-2.
 Then, we collected seven expanded system utterances based on each pair.
 
+## Requirements
+
+- Python 3.8+
+- Osaka University Multimodal Dialogue Corpus (Hazumi1911)
+
 ## References
 
 [^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
