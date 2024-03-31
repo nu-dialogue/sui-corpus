@@ -12,6 +12,15 @@ I Remember You!: SUI Corpus for Remembering and Utilizing Users' Information in 
 ## Data overview
 
 The SUI corpus was constructed by extending the Osaka University Multimodal Dialogue Corpus Hazumi (Hazumi1911)[^1].
+The SUI corpus contains triplets formed of <user information, dialogue context, system utterance based on the user information and dialogue context (expanded system utterance)>.
+We constructed the SUI corpus by following two tasks:
+
+1. Extract user information from a dialogue (called dialogue-1)
+2. Create system utterances based on the user information extracted in task 1 and another dialogue context (called dialogue-2).
+
+Dialogue-1 and dialogue-2 are dialogues in which the same user talks about different topics.
+We first divided each dialogue in Hazumi1911 into topic segments and then created pairs of dialogue-1 and dialogue-2.
+Then, we collected seven expanded system utterances based on each pair.
 
 ## References
 
