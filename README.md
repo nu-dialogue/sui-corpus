@@ -1,4 +1,5 @@
 # SUI corpus: System utterance based on User Information corpus
+
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This repository contains the SUI corpus, System utterance based on User Information corpus.
@@ -9,6 +10,7 @@ I Remember You!: SUI Corpus for Remembering and Utilizing Users' Information in 
 > This public version has been filtered from all collected the expanded system utterances. Please note that it may slightly differ from the statistical information in our paper.
 
 ## Data overview
+
 The SUI corpus was constructed by extending the Osaka University Multimodal Dialogue Corpus Hazumi (Hazumi1911)[^1].
 The SUI corpus contains triplets formed of <user information, dialogue context, system utterance based on the user information and dialogue context (expanded system utterance)>.
 We constructed the SUI corpus by following two tasks:
@@ -21,10 +23,12 @@ We first divided each dialogue in Hazumi1911 into topic segments and then create
 Then, we collected seven expanded system utterances based on each pair.
 
 ## Requirements
+
 - Python 3.8+
 - Osaka University Multimodal Dialogue Corpus (Hazumi1911)
 
 ## Data creation
+
 1. Clone sui-corpus repository
 ```bash
 git clone https://github.com/nu-dialogue/sui-corpus.git
@@ -42,7 +46,8 @@ bash run_make_sui_corpus.sh
 > The SUI corpus is stored in `sui-corpus/sui_corpus.json`.
 
 ## Data format
-The created dataset consists of dialogue_pair_id, expanded_system_utterance_id, user_information, dialogue_context, and expanded_system_utterance.
+
+The created dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id, expanded_system_utterance_id, user_information, dialogue_context, and expanded_system_utterance.
 
 | Key | Type | Explanation |
 | --- | --- | --- |
@@ -94,6 +99,7 @@ The created dataset consists of dialogue_pair_id, expanded_system_utterance_id, 
 ```
 
 ## Citation
+
 ```bibtex
 @inproceedings{tsunomori2024i,
     title = "I Remember You!: SUI Corpus for Remembering and Utilizing Users' Information in Chat-oriented Dialogue Systems",
@@ -115,12 +121,15 @@ The created dataset consists of dialogue_pair_id, expanded_system_utterance_id, 
 ```
 
 ## References
+
 [^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
 
 ## Aknowledgement
+
 This work was supported by JSPS KAKENHI Grant Number 19H05692.
 
 ## License
+
 The SUI corpus is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
