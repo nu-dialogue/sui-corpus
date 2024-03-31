@@ -45,6 +45,59 @@ git clone https://github.com/ouktlab/Hazumi1911.git
 bash run_make_sui_corpus.sh
 ```
 
+## Data format
+
+The created dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id, expanded_system_utterance_id, user_information, dialogue_context, and expanded_system_utterance.
+
+| Key | Type | Explanation |
+| --- | --- | --- |
+| dialogue_pair_id | int | Dialogue pair ID of dialogue-1 and dialogue-2. |
+| expanded_system_utterance_id | int | Expanded system utterance ID, unique within the dialogue pair. Indexed starting from 1 to 7. |
+| user_information | list (dict) | List of user information extracted by dialogue-1. |
+| user_information.speaker | str | Speaker name. |
+| user_information.text | str | Utterance text. |
+| dialogue_context | list (dict) | List of dialogue context, i.e., dialogue-2. |
+| dialogue_context.utterance_id | int | Utterance ID, unique within the dialogue. Indexed starting from 1. |
+| dialogue_context.speaker | str | Speaker name. |
+| dialogue_context.text | str | Utterance text. |
+| expanded_system_utterance | str | Expanded system utterance text. |
+
+```jsonc
+[
+	{
+		"dialogue_pair_id": 1,
+		"expanded_system_utterance_id": 1
+		"user_information": [
+			{
+				"speaker": "User",
+				"text": "そうですね ビールとか 日本酒 酎ハイ 大概のものは飲みます"
+			},
+			// ...
+		],
+		"dialogue_context": [
+			{
+				"utterance_id": 1,
+				"speaker": "User",
+				"text": "最近見た映画 最近見た映画 最近見た映画最近映画館は行かないので テレビでもいいですか"
+			},
+			{
+				"utterance_id": 2,
+				"speaker": "System",
+				"text": "それでは少し「テレビ」の話をしましょう！"
+			},
+			// ...
+		],
+		"expanded_system_utterance": "ドラマを見るときは、なにかお酒を飲みながらが多いですか？"
+	},
+	{
+		"dialogue_pair_id": 1,
+		"expanded_system_utterance_id": 2
+		// ...
+	},
+	// ...
+]
+```
+
 ## References
 
 [^1]: Kazunori Komatani, Shogo Okada, Haruto Nishimoto, Masahiro Araki, and Mikio Nakano. Multimodal Dialogue Data Collection and Analysis of Annotation Disagreement.  In Proceedings of the International Workshop on Spoken Dialogue Systems Technology (IWSDS), pp. 201-213, 2019.
