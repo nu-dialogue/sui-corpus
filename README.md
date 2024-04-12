@@ -7,13 +7,13 @@ More details about the dataset can be found in our LREC-COLING 2024 paper:
 I Remember You!: SUI Corpus for Remembering and Utilizing Users' Information in Chat-oriented Dialogue Systems
 
 > [!NOTE]
-> This public version has been filtered from the SUI corpus in our paper. Please note that it may slightly differ from the statistical information in our paper.
+> The public version is derived from the SUI corpus in our paper, having been filtered to exclude certain data. Please note that it may slightly differ from the statistical information of the original corpus.
 
 ## Data overview
 
 The SUI corpus was constructed by extending the Osaka University Multimodal Dialogue Corpus Hazumi (Hazumi1911)[^1].
 The SUI corpus contains triplets formed of <user information, dialogue context, system utterance based on the user information and dialogue context (expanded system utterance)>.
-We constructed the SUI corpus by the following two tasks:
+We constructed the SUI corpus by conducting the following two tasks:
 
 1. Extract user information from a dialogue (called dialogue-1)
 2. Create system utterances based on the user information extracted in task 1 and dialogue context (called dialogue-2).
@@ -45,7 +45,7 @@ git clone https://github.com/ouktlab/Hazumi1911.git
 bash run_make_sui_corpus.sh
 ```
 > [!IMPORTANT]
-> `run_make_sui_corpus.sh` creates the SUI corpus stored in `sui-corpus/sui_corpus.json`.
+> `run_make_sui_corpus.sh` creates the SUI corpus, which will be stored in `sui-corpus/sui_corpus.json`.
 
 ## Data format
 
