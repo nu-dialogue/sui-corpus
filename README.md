@@ -45,11 +45,11 @@ git clone https://github.com/ouktlab/Hazumi1911.git
 bash run_make_sui_corpus.sh
 ```
 > [!IMPORTANT]
-> `run_make_sui_corpus.sh` creates the SUI corpus, which will be stored in `sui-corpus/sui_corpus.json`.
+> `run_make_sui_corpus.sh` creates the SUI corpus, which will be stored in `sui_corpus.json`.
 
 ## Data format
 
-Each record of the dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id, expanded_system_utterance_id, user_information, dialogue_context, and expanded_system_utterance.
+Each record of the dataset (`sui_corpus.json`) consists of dialogue_pair_id, expanded_system_utterance_id, user_information, dialogue_context, and expanded_system_utterance.
 
 | Key | Type | Explanation |
 | --- | --- | --- |
