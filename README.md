@@ -7,20 +7,20 @@ More details about the dataset can be found in our LREC-COLING 2024 paper:
 I Remember You!: SUI Corpus for Remembering and Utilizing Users' Information in Chat-oriented Dialogue Systems
 
 > [!NOTE]
-> This public version has been filtered from all collected the expanded system utterances. Please note that it may slightly differ from the statistical information in our paper.
+> This public version has been filtered from the SUI corpus in our paper. Please note that it may slightly differ from the statistical information in our paper.
 
 ## Data overview
 
 The SUI corpus was constructed by extending the Osaka University Multimodal Dialogue Corpus Hazumi (Hazumi1911)[^1].
 The SUI corpus contains triplets formed of <user information, dialogue context, system utterance based on the user information and dialogue context (expanded system utterance)>.
-We constructed the SUI corpus by following two tasks:
+We constructed the SUI corpus by the following two tasks:
 
 1. Extract user information from a dialogue (called dialogue-1)
-2. Create system utterances based on the user information extracted in task 1 and another dialogue context (called dialogue-2).
+2. Create system utterances based on the user information extracted in task 1 and dialogue context (called dialogue-2).
 
 Dialogue-1 and dialogue-2 are dialogues in which the same user talks about different topics.
 We first divided each dialogue in Hazumi1911 into topic segments and then created pairs of dialogue-1 and dialogue-2.
-Then, we collected seven expanded system utterances based on each pair.
+Then, we collected seven expanded system utterances based on each pair by crowdsourcing.
 
 ## Requirements
 
@@ -45,11 +45,11 @@ git clone https://github.com/ouktlab/Hazumi1911.git
 bash run_make_sui_corpus.sh
 ```
 > [!IMPORTANT]
-> The SUI corpus is stored in `sui-corpus/sui_corpus.json`.
+> `run_make_sui_corpus.sh` creates the SUI corpus stored in `sui-corpus/sui_corpus.json`.
 
 ## Data format
 
-The created dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id, expanded_system_utterance_id, user_information, dialogue_context, and expanded_system_utterance.
+Each record of the dataset (`sui-corpus/sui_corpus.json`) consists of dialogue_pair_id, expanded_system_utterance_id, user_information, dialogue_context, and expanded_system_utterance.
 
 | Key | Type | Explanation |
 | --- | --- | --- |
