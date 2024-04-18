@@ -24,7 +24,7 @@ Then, we collected seven expanded system utterances based on each pair by crowds
 
 ## Dependencies
 
-- Linux or another Unix-like OS
+- Compatible with major Linux distributions
 - Python 3.8+
 - Osaka University Multimodal Dialogue Corpus (Hazumi1911)
 
