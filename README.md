@@ -123,7 +123,7 @@ Each record of the dataset (`sui_corpus.json`) consists of dialogue_pair_id, exp
 }
 ```
 
-## Aknowledgement
+## Acknowledgment
 
 This work was supported by JSPS KAKENHI Grant Number 19H05692.
 
